@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Billionaire Idle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>💸 Billionaire Idle</h1>
+  <button onclick="toggleTheme()">🌗 Theme</button>
+</header>
+
+<div id="stats">
+  <div id="money">$0</div>
+  <div id="income">$0 / sec</div>
+  <div id="prestige">Prestige x1</div>
+</div>
+
+<button id="clicker" onclick="clickMoney()">💰 TAP TO EARN</button>
+
+<div class="section"><h2>👔 Jobs</h2><div id="jobs"></div></div>
+<div class="section"><h2>👕 Clothes</h2><div id="clothes"></div></div>
+<div class="section"><h2>🚗 Cars</h2><div id="cars"></div></div>
+<div class="section"><h2>🏠 Homes</h2><div id="homes"></div></div>
+<div class="section"><h2>👥 Employees</h2><div id="employees"></div></div>
+<div class="section"><h2>🏢 Companies</h2><div id="companies"></div></div>
+
+<div class="section">
+  <h2>📈 Stock / Crypto</h2>
+  <canvas id="chart" width="300" height="120"></canvas>
+  <button onclick="invest()">Invest</button>
+</div>
+
+<div class="section">
+  <h2>🏆 Achievements</h2>
+  <ul id="achievements"></ul>
+</div>
+
+<div class="section">
+  <h2>🔁 Prestige</h2>
+  <button onclick="prestige()">Reset for Bonus</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
